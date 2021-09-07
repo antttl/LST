@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/common.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+    <div class="end">
+        <h1>끝</h1>
+    </div>
+    <div class="screen">
+        <h1>LSD</h1>
+        <div class="frame">
+            <div class="box flex-box shadow">
+                <label>현재시간</label>
+                <h2 id="time">00:00:00</h2>
+            </div>
+
+            <!--  D-day -->
+            <div class="box flex-box shadow">
+
+            </div>
+
+            <!-- 타이머  -->
+            <div class="box flex-box shadow">
+                <h2 class="timer-text">타이머 시작하기</h2>
+                <div class="progress">
+                    <div class="progress-in">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 체크박스 -->
+            <div class="box flex-box shadow">
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+<script src="{{url_for('static', filename='js/main.js')}}"></script>
+</html>

@@ -1,3 +1,5 @@
+
+
 .box {
     width: 90%;
     height: 100%;
@@ -30,7 +32,7 @@
 
 .box:nth-child(4) {
     grid-column: 1/4;
-    grid-row: 3/7;
+    grid-row: 3/6;
     flex-direction: column;
 }
 
@@ -40,18 +42,23 @@
     flex-direction: column;
 }
 
+.box:nth-child(5) {
+    grid-column: 1/4;
+    grid-row: 6/7;
+    flex-direction: column;
+}
+
 
 .progress {
-    height: 30px;
+    height: 20px;
     width: 100%;
     background-color: rgb(240, 240, 240);
     position: relative;
-
 }
 
 
 .timer-text {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .progress-in {
@@ -74,4 +81,59 @@
     align-items: center;
     justify-content: center;
     z-index: 1000;
+}
+
+.chbox {
+    width: 90%;
+    min-height: 40px;
+    padding: 10px 5%;
+    height: 30px;
+    display: flex;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    flex-direction: row;
+    align-items: center;
+}
+
+.chbox > input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+}
+
+.chbox > input[type='button'] {
+    width: 20px;
+    height: 20px;
+}
+
+.chbox > button {
+    width: 25%;
+    height: 90%;
+    background-color: rgb(27, 216, 143);
+    color: white;
+    font-weight: 900;
+    border: 0px;
+    margin-left: 5px;
+}
+
+.add_chbox {
+    border: 0px;
+    background-color: rgb(240, 240, 240);
+    width: 85%;
+    height: 90%;
+    text-align: center;
+}
+
+.chbox > h4 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.chbox-frame {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#Remove {
+    width: calc(85% + 25% + 5px);
 }

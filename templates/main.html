@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>LSD</title>
     <link rel="stylesheet" href="{{url_for('static', filename='css/common.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
 </head>
@@ -12,7 +12,7 @@
     <div class="end">
         <h1>끝</h1>
     </div>
-    <div class="screen">
+    <div class="screen">        
         <h1>LSD</h1>
         <div class="frame">
             <div class="box flex-box shadow">
@@ -22,23 +22,35 @@
 
             <!--  D-day -->
             <div class="box flex-box shadow">
-
+                <h3 class="dday">계산중</h3>
             </div>
 
             <!-- 타이머  -->
             <div class="box flex-box shadow">
-                <h2 class="timer-text">타이머 시작하기</h2>
+                <h3 class="timer-text">타이머 시작하기</h3>
                 <div class="progress">
                     <div class="progress-in">
-
                     </div>
                 </div>
             </div>
 
             <!-- 체크박스 -->
-            <div class="box flex-box shadow">
-
+            <div class="box shadow chbox-frame">
+                <div class="chbox">
+                    <input type="text" class="add_chbox" placeholder="입력해라" maxlength="20">
+                    <button id="Add">추가</button>
+                </div>
+                <div class="chbox">
+                    <button id="Remove">전체 제거하기</button>
+                </div>
             </div>
+
+            <!-- 체크박스 -->
+            <div class="box flex-box shadow" id="Tips">
+                <h3>공부관련 팁보러가기</h3>
+            </div>
+
+
 
         </div>
 

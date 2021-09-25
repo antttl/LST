@@ -7,7 +7,7 @@ body * {
 
 .screen { 
     width: calc(100vw - 40px);
-    height: 95vh;
+    height: -webkit-fill-available;
     margin: 2.5vh 20px;
     position: fixed;
     left: 0px;
